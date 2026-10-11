@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1E3A8A">
+
+  <!-- Primary Meta Tags -->
+  <title>Razi | Full-Stack Software Engineer</title>
+  <meta name="title" content="Alex Mercer | Senior Full-Stack Software Engineer & Cloud Architect">
+  <meta name="description"
+    content="Portfolio of Alex Mercer, a Senior Full-Stack Software Engineer specializing in modern web apps, cloud infrastructure, AI integrations, and high-performance distributed systems.">
+  <meta name="keywords"
+    content="Software Engineer, Full Stack Developer, React, Node.js, TypeScript, Cloud Architect, DevOps, Python, Web Developer Portfolio">
+  <meta name="author" content="Alex Mercer">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alex Mercer | Senior Full-Stack Software Engineer">
+  <meta property="og:description"
+    content="Explore cutting-edge web applications, cloud architecture, and software engineering case studies.">
+  <meta property="og:image" content="assets/img/profile.jpg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Font Awesome 6.5.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Devicon Library-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100">
+
+  <!-- Ambient Light Orbs -->
+  <div class="bg-ambient-orb bg-orb-1"></div>
+  <div class="bg-ambient-orb bg-orb-2"></div>
+  <div class="bg-ambient-orb bg-orb-3"></div>
+
+  <!-- ==========================================================================
+       Navbar Section
+       ========================================================================== -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top navbar-custom" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand-custom" href="#home">
+        <div class="brand-icon">
+          <span>MR</span>
+        </div>
+        <span>Muh<span class="text-gradient">.Razi</span></span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-3"></i>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <!-- CTA in Navbar -->
+        <div class="d-flex align-items-center gap-3">
+          <a href="#contact" class="btn-modern-primary btn-sm d-none d-lg-inline-flex">
+            <i class="bi bi-send-fill"></i>
+            <span>Get In Touch</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       Hero Section (Home)
+       ========================================================================== -->
+  <header id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <!-- Left Content -->
+        <div class="col-lg-12" data-aos="fade-right" data-aos-duration="1000">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Available for New Projects & Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Building <span class="text-gradient">Scalable</span> Software & Modern Web Solutions
+          </h1>
+
+          <div class="hero-dynamic-role">
+            <span class="text-white me-2">I am a</span>
+            <span class="typed-text"></span>
+            <span class="typed-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            B.Tech Computer Science & Engineering graduate passionate about building modern, user-friendly software and web applications.
+             I enjoy solving problems, learning new technologies, and turning ideas into practical digital solutions. Currently seeking an 
+             entry-level opportunity to apply my skills, contribute to real-world projects, and grow as a software professional.
+          </p>
+
+          <!-- Call to Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn-modern-primary">
+              <i class="bi bi-grid-3x3-gap-fill"></i>
+              <span>Explore Projects</span>
+            </a>
+            <a href="#contact" class="btn-modern-secondary">
+              <i class="bi bi-chat-quote-fill"></i>
+              <span>Let's Talk</span>
+            </a>
+            <a href="#about" class="btn-modern-secondary">
+              <i class="bi bi-file-earmark-person-fill"></i>
+              <span>View Resume</span>
+            </a>
+          </div>
+
+          <!-- Quick Tech Stack Badges Cloud -->
+          <div class="tech-pills-wrapper">
+            <span class="tech-pills-label">Tech Stack:</span>
+            <span class="tech-pill"><i class="devicon-java-plain colored"></i> Java</span>
+            <span class="tech-pill"><i class="devicon-spring-original colored"></i> Spring Boot</span>
+            <span class="tech-pill"><i class="fa-brands fa-js text-primary"></i> JavaScript</span>
+            <span class="tech-pill"><i class="fa-brands fa-react text-info"></i> React</span>
+            <span class="tech-pill"><i class="fa-brands fa-node-js text-success"></i> Node.js</span>
+            <span class="tech-pill"><i class="fa-brands fa-python text-warning"></i> Python</span>
+            <span class="tech-pill"><i class="bi bi-database text-info"></i> OracleSQL</span>
+            <span class="tech-pill"><i class="fa-brands fa-html5 text-warning"></i> HTML</span>
+            <span class="tech-pill"><i class="fa-brands fa-css3-alt text-info"></i> CSS</span>
+            <span class="tech-pill"><i class="fa-brands fa-git-alt text-warning"></i> Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       About Section
+       ========================================================================== -->
+  <section id="about">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag"><i class="bi bi-person-badge"></i> About Me</span>
+        <h2 class="section-title">Building Modern Solutions <span class="text-gradient">With Code</span> & Creativity</h2>
+        <p class="section-subtitle">
+          Passionate about building responsive, user-focused applications and continuously learning modern technologies.
+        </p>
+      </div>
+
+      <div class="row align-items-center g-5">
+
+        <!-- Left: Avatar with Glow -->
+        <!-- <div class="col-lg-5" data-aos="fade-right" data-aos-duration="900">
+          <div class="about-avatar-wrapper">
+            <div class="about-avatar-glow-ring"></div>
+            <img src="./assets/./img/profile1.jpeg" alt="Razi Software Engineer" class="about-avatar-img img-fluid" >
+          </div>
+        </div> -->
+
+        <!-- Right: Bio & Interactive Tabs -->
+        <div class="col-lg-12" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+
+          <h3 class="fw-bold mb-3">Hello! I'm <span class="text-gradient-secondary">Muhammed Razi</span></h3>
+          <p class="mb-4 lead" style="font-size: 1.05rem;">
+            A passionate Software Engineer with a strong interest in software development
+            and full-stack web technologies. I enjoy turning ideas into practical, user-friendly applications.
+          </p>
+          <p class="mb-4">
+            My current focus is Java Full Stack development, working with Java, Spring Boot, React, JavaScript,
+            HTML, CSS, and MySQL. I’m continuously improving my problem-solving skills and building projects that
+            strengthen my development experience.
+          </p>
+
+          <!-- Interactive Nav Tabs (Skills vs Experience) -->
+          <ul class="nav custom-tabs" id="aboutTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills-pane"
+                type="button" role="tab" aria-controls="skills-pane" aria-selected="true">
+                <i class="bi bi-cpu-fill"></i> Technical Skills
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="experience-tab" data-bs-toggle="tab" data-bs-target="#experience-pane"
+                type="button" role="tab" aria-controls="experience-pane" aria-selected="false">
+                <i class="bi bi-briefcase-fill"></i> Education
+              </button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="aboutTabsContent">
+
+            <!-- Pane 1: Technical Skills -->
+            <div class="tab-pane fade show active" id="skills-pane" role="tabpanel" aria-labelledby="skills-tab">
+              <div class="row g-4">
+
+                <div class="col-md-6">
+                  <div class="skill-bar-item">
+                    <div class="skill-info">
+                      <span class="skill-name"><i class="fa-solid fa-laptop-code text-info"></i> Frontend (HTML / CSS / JavaScript / React.js)</span>
+                    </div>
+                    <div class="skill-progress-track">
+                      <div class="skill-progress-fill" data-progress="95%"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-bar-item">
+                    <div class="skill-info">
+                      <span class="skill-name"><i class="fa-solid fa-server text-success"></i> Backend (Java / Spring Boot)</span>
+                    </div>
+                    <div class="skill-progress-track">
+                      <div class="skill-progress-fill cyan" data-progress="90%"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-bar-item">
+                    <div class="skill-info">
+                      <span class="skill-name"><i class="fa-brands fa-python text-warning"></i> Python & AI
+                        Integrations</span>
+                    </div>
+                    <div class="skill-progress-track">
+                      <div class="skill-progress-fill purple" data-progress="85%"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="skill-bar-item">
+                    <div class="skill-info">
+                      <span class="skill-name"><i class="bi bi-link-45deg text-warning"></i> API & Integration (Rest API /
+                        JSON / HTTP)</span>
+                    </div>
+                    <div class="skill-progress-track">
+                      <div class="skill-progress-fill" data-progress="88%"></div>
+                    </div>
+                  </div>
+
+
+                  
+                  <div class="skill-bar-item">
+                    <div class="skill-info">
+                      <span class="skill-name"><i class="bi bi-database-fill text-info"></i> Databases (OracleSQL /
+                        MongoDB / MySQL)</span>
+                    </div>
+                    <div class="skill-progress-track">
+                      <div class="skill-progress-fill cyan" data-progress="92%"></div>
+                    </div>
+                  </div>
+                
+
+                  
+                  <div class="skill-bar-item">
+                    <div class="skill-info">
+                      <span class="skill-name"><i class="bi bi-tools text-danger"></i> Tools (Git / GitHub)</span>
+                    </div>
+                    <div class="skill-progress-track">
+                      <div class="skill-progress-fill purple" data-progress="87%"></div>
+                    </div>
+                  </div>
+                </div>
+              
+
+              </div>
+            </div>
+
+            <!-- Pane 2: Career & Education Timeline -->
+            <div class="tab-pane fade" id="experience-pane" role="tabpanel" aria-labelledby="experience-tab">
+              <div class="timeline-custom">
+
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <span class="timeline-date">2022 - 2026</span>
+                  <h4 class="timeline-title">B.Tech in Computer Science and Engineering</h4>
+                  <div class="timeline-company">Kerala Technology University(KTU)</div>
+                  <p class="timeline-desc">
+                    Bachelor of Technology in Computer Science and Engineering, with a focus on software development,
+                    web technologies, database management, and computer science fundamentals.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Services Section
+       ========================================================================== -->
+  <section id="services">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag"><i class="bi bi-gear-wide-connected"></i> What I Offer</span>
+        <h2 class="section-title">Comprehensive <span class="text-gradient">Engineering Services</span></h2>
+        <p class="section-subtitle">
+          Delivering end-to-end technical solutions from architectural design to deployment and continuous optimization.
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="row g-4">
+
+        <!-- Service 1 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="glass-card service-card">
+            <div>
+              <div class="service-icon-box">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3 class="service-title">Web Development</h3>
+              <p class="service-desc">
+               Building responsive and user-friendly websites using modern frontend
+               technologies with a focus on clean design, performance, and accessibility.
+              </p>
+              <ul class="service-features-list">
+                <li><i class="bi bi-check2-circle"></i> Responsive & mobile-friendly design</li>
+                <li><i class="bi bi-check2-circle"></i> HTML, CSS & JavaScript</li>
+                <li><i class="bi bi-check2-circle"></i> React.js fundamentals</li>
+              </ul>
+            </div>
+            <a href="#contact" class="service-link">
+              <span>Discuss Project</span> <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="glass-card service-card">
+            <div>
+              <div class="service-icon-box">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <h3 class="service-title">Full-Stack Development</h3>
+              <p class="service-desc">
+                Developing complete web applications with interactive frontends,
+                backend services, databases, and REST APIs.
+              </p>
+              <ul class="service-features-list">
+                <li><i class="bi bi-check2-circle"></i> Frontend & backend integration</li>
+                <li><i class="bi bi-check2-circle"></i> Java & Spring Boot</li>
+                <li><i class="bi bi-check2-circle"></i> REST APIs & database connectivity</li>
+              </ul>
+            </div>
+            <a href="#contact" class="service-link">
+              <span>Discuss Project</span> <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="glass-card service-card">
+            <div>
+              <div class="service-icon-box">
+                <i class="fa-solid fa-palette"></i>
+              </div>
+              <h3 class="service-title">UI/UX & Responsive Design</h3>
+              <p class="service-desc">
+                Creating clean, modern, and responsive user interfaces that provide a smooth 
+                experience across desktop, tablet, and mobile devices.
+              </p>
+              <ul class="service-features-list">
+                <li><i class="bi bi-check2-circle"></i> Responsive layouts</li>
+                <li><i class="bi bi-check2-circle"></i> Modern UI design</li>
+                <li><i class="bi bi-check2-circle"></i> Cross-device compatibility</li>
+              </ul>
+            </div>
+            <a href="#contact" class="service-link">
+              <span>Discuss Project</span> <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Projects Section
+       ========================================================================== -->
+  <section id="projects">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag"><i class="bi bi-folder-check"></i> Portfolio</span>
+        <h2 class="section-title">Some Featured <span class="text-gradient">Projects </span></h2>
+      </div>
+
+      <!-- Project Category Filters -->
+      <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+       
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="row g-4" id="projectsContainer">
+
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-4 project-item" data-category="fullstack ai-cloud" data-aos="fade-up"
+          data-aos-delay="100">
+          <div class="glass-card project-card">
+            <div class="project-img-wrapper">
+              <img src="assets/img/proj1.png" alt="Cloudlytics Pro" class="project-img">
+            
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Java</span>
+                <span class="project-tag">Bootstrap</span>
+              </div>
+              <h3 class="project-title">Mobile Shop E-Commerce Website</h3>
+              <p class="project-desc">
+                A resposive mobile shop website featuring smooth scroll animations, user login, product management, and an admin panel.
+                Designed with a modern UI and responsive layout for a better user experience.
+              </p>
+              <div class="project-footer-links">
+                
+                <div class="d-flex gap-2">
+                  <a href="https://github.com" target="_blank" rel="noopener" class="text-muted fs-5"><i
+                      class="bi bi-github text-info"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-4 project-item" data-category="ai-cloud" data-aos="fade-up" data-aos-delay="200">
+          <div class="glass-card project-card">
+            <div class="project-img-wrapper">
+              <img src="assets/img/proj2.png" alt="SynthoAI Engine" class="project-img">
+              
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">java</span>
+                <span class="project-tag">OracleSQL</span>
+              </div>
+              <h3 class="project-title">Web Application created for a company</h3>
+              <p class="project-desc">
+                Build a proffessional responsive web application for a brand called 
+                wexro featuring a clean and optimized UI and a clean user friendly interface. 
+              </p>
+              <div class="project-footer-links">
+                <div class="d-flex gap-2">
+                  <a href="https://github.com" target="_blank" rel="noopener" class="text-muted fs-5"><i
+                      class="bi bi-github text-info"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-6 col-lg-4 project-item" data-category="fullstack fintech" data-aos="fade-up"
+          data-aos-delay="300">
+          <div class="glass-card project-card">
+            <div class="project-img-wrapper">
+              <img src="./assets/img/prof3.png" alt="Nexus AlgoTrade" class="project-img">
+              
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Java</span>
+                <span class="project-tag">Spring boot</span>
+                <span class="project-tag">MySQL</span>
+              </div>
+              <h3 class="project-title">JobTrack</h3>
+              <p class="project-desc">
+                A job application tracking system that helps users manage and organize their job applications. It provides features to add, view,
+                 update, and delete application details through a responsive web interface.
+              </p>
+              <div class="project-footer-links">
+                
+                <div class="d-flex gap-2">
+                  <a href="https://github.com" target="_blank" rel="noopener" class="text-muted fs-5"><i
+                      class="bi bi-github text-info"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- ==========================================================================
+       Contact Section
+       ========================================================================== -->
+  <section id="contact">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag"><i class="bi bi-chat-dots-fill"></i> Contact</span>
+        <h2 class="section-title">Let's Build Something <span class="text-gradient">Extraordinary</span></h2>
+        <p class="section-subtitle">
+          Have an exciting project, architectural challenge, or engineering opportunity? Let's connect and make it
+          happen.
+        </p>
+      </div>
+
+      <div class="row g-5">
+
+        <!-- Left: Contact Details -->
+        <div class="col-lg-5" data-aos="fade-right" data-aos-duration="900">
+
+          <div class="glass-card contact-info-card">
+            <div class="contact-icon-box">
+              <i class="bi bi-envelope-at-fill"></i>
+            </div>
+            <div>
+              <div class="contact-info-title">Email Directly</div>
+              <a href="mailto:alex.mercer.dev@example.com"
+                class="contact-info-val text-decoration-none">razi077@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="glass-card contact-info-card">
+            <div class="contact-icon-box">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div>
+              <div class="contact-info-title">Location</div>
+              <div class="contact-info-val">India, Kerala (Remote)</div>
+            </div>
+          </div>
+
+          <!-- <div class="glass-card contact-info-card">
+            <div class="contact-icon-box">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div>
+              <div class="contact-info-title">Phone / WhatsApp</div>
+              <a href="tel:+14155550198" class="contact-info-val text-decoration-none">+1 (415) 555-0198</a>
+            </div>
+          </div> -->
+
+          <!-- Social Profiles -->
+          <div class="mt-4 pt-2">
+            <h5 class="fw-bold mb-3">Connect on Socials</h5>
+            <div class="d-flex gap-2">
+              <a href="https://github.com" target="_blank" rel="noopener" class="btn-icon-circle"
+                aria-label="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener" class="btn-icon-circle"
+                aria-label="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <!-- <a href="https://twitter.com" target="_blank" rel="noopener" class="btn-icon-circle"
+                aria-label="Twitter Profile">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a> -->
+              <!-- <a href="https://discord.com" target="_blank" rel="noopener" class="btn-icon-circle" aria-label="Discord">
+                <i class="fa-brands fa-discord"></i>
+              </a> -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Interactive Contact Form -->
+        <div class="col-lg-7" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+          <div class="glass-card p-4 p-md-5">
+            <h3 class="fw-bold mb-4">Send Me a Message</h3>
+
+            <form id="contactForm" novalidate>
+
+              <div class="row g-3">
+
+                <div class="col-md-6">
+                  <label for="userName" class="form-label-custom">Your Name *</label>
+                  <input type="text" class="form-control form-control-custom" id="userName"
+                    placeholder="e.g. Razi" required>
+                  <div class="invalid-feedback font-code small">Please enter your name.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="userEmail" class="form-label-custom">Email Address *</label>
+                  <input type="email" class="form-control form-control-custom" id="userEmail"
+                    placeholder="e.g. razi@company.com" required>
+                  <div class="invalid-feedback font-code small">Please provide a valid email.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="projectType" class="form-label-custom">Project / Inquiry Type</label>
+                  <select class="form-select form-control-custom" id="projectType">
+                    <option value="fullstack" selected>Full-Stack Development</option>
+                    <option value="cloud">Web Development</option>
+                    <option value="ai">UI/UX & Responsive Design</option>
+                    <option value="fulltime">Full-Time / Contract Role</option>
+                    <option value="other">Other Inquiry</option>
+                  </select>
+                </div>
+
+                <!-- <div class="col-md-6">
+                  <label for="budgetRange" class="form-label-custom">Estimated Budget / Scope</label>
+                  <input type="number" class="form-control form-control-custom" id="userBudget"
+                    placeholder="Your Budget">
+                </div> -->
+
+                <div class="col-12">
+                  <label for="userMessage" class="form-label-custom">Project Details / Message *</label>
+                  <textarea class="form-control form-control-custom" id="userMessage" rows="5"
+                    placeholder="Describe your project goals, technical requirements, or role specification..."
+                    required></textarea>
+                  <div class="invalid-feedback font-code small">Please provide some details for your inquiry.</div>
+                </div>
+
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn-modern-primary w-100 py-3">
+                    <i class="bi bi-send-fill"></i>
+                    <span>Send Message</span>
+                  </button>
+                </div>
+
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer Section
+       ========================================================================== -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Brand / Bio Column -->
+        <div class="col-lg-5">
+          <a class="footer-brand text-decoration-none" href="#home">
+            <div class="brand-icon">
+              <span>MR</span>
+            </div>
+            <span>Muh<span class="text-gradient">.Razi</span></span>
+          </a>
+          <p class="footer-desc mt-3">
+            Building reliable, high-performance software systems and intuitive digital experiences with passion and
+            modern engineering discipline.
+          </p>
+          <div class="d-flex gap-2 mt-4">
+            <a href="https://github.com" target="_blank" rel="noopener" class="btn-icon-circle" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="btn-icon-circle" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div class="col-6 col-lg-2 offset-lg-1">
+          <h5 class="footer-links-title">Navigation</h5>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Links -->
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-links-title">Services</h5>
+          <ul class="footer-links-list">
+            <li><a href="#services">Full-Stack Development</a></li>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">UI/UX & Responsive Design</a></li>
+          </ul>
+        </div>
+
+        <!-- Status / Contact Info -->
+        <div class="col-lg-2">
+          <h5 class="footer-links-title">Status</h5>
+          <div class="d-flex align-items-center gap-2 text-success font-code small mb-2">
+            <span class="status-dot"></span> Online & Available
+          </div>
+          <p class="text-muted small">India, Kerala</p>
+          <a href="#contact" class="btn-modern-secondary btn-sm mt-2 w-100 text-center">
+            Hire Me
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="currentYear">2026</span> Muh Razi. Built with HTML5, CSS3, JavaScript & Bootstrap 5.
+        </div>
+        <div class="d-flex gap-4">
+          
+          <a href="#home" class="text-muted">Back to Top &uarr;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Project Details Modal
+       ========================================================================== -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content modal-content-glass">
+
+        <div class="modal-header">
+          <div>
+            <span class="badge bg-primary-subtle text-primary border border-primary-subtle mb-2 font-code"
+              id="modalProjectCategory">Category</span>
+            <h4 class="modal-title fw-bold" id="modalProjectTitle">Project Title</h4>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="rounded-3 overflow-hidden mb-4 border border-secondary border-opacity-25"
+            style="max-height: 380px;">
+            <img id="modalProjectImage" src="" alt="" class="img-fluid w-100 object-fit-cover">
+          </div>
+
+          <h5 class="fw-bold mb-2">Project Overview & Architecture</h5>
+          <p class="text-muted mb-4" id="modalProjectDesc"></p>
+
+          <div class="mb-4">
+            <h6 class="fw-bold text-white mb-2">Key Highlights & Business Impact</h6>
+            <div class="p-3 rounded-3 bg-dark border border-secondary border-opacity-25 font-code text-info small"
+              id="modalProjectMetrics">
+            </div>
+          </div>
+
+          <h6 class="fw-bold text-white mb-2">Technologies & Libraries Used</h6>
+          <div class="d-flex flex-wrap gap-2 mb-4" id="modalProjectTags"></div>
+
+          <div class="d-flex gap-3 pt-3 border-top border-secondary border-opacity-25">
+            <a href="#" id="modalProjectLive" target="_blank" rel="noopener" class="btn-modern-primary btn-sm">
+              <i class="bi bi-box-arrow-up-right"></i> Live Demo Preview
+            </a>
+            <a href="#" id="modalProjectGit" target="_blank" rel="noopener" class="btn-modern-secondary btn-sm">
+              <i class="bi bi-github"></i> View Source Code
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Feedback Toast Notification
+       ========================================================================== -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="contactToast" class="toast toast-glass" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header bg-dark text-white border-bottom border-secondary border-opacity-25">
+        <i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>
+        <strong class="me-auto">Message Transmitted!</strong>
+        <small class="text-muted">Just now</small>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Thank you for reaching out! Your message was received successfully. Razi will reply back within 24 hours.
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Floating Button -->
+  <button id="backToTopBtn" class="btn-back-to-top" aria-label="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- ==========================================================================
+       JavaScript Dependencies
+       ========================================================================== -->
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS (Animate On Scroll) JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Custom JavaScript Logic -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
