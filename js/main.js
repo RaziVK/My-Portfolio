@@ -177,13 +177,13 @@ document.addEventListener('DOMContentLoaded', () => {
   
 
   /* --------------------------------------------------------------------------
-     8. Contact Form Validation & Toast Notification
+     8. Contact Form Validation & Google Form Submission
      -------------------------------------------------------------------------- */
   const contactForm = document.getElementById('contactForm');
   const contactToastEl = document.getElementById('contactToast');
 
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       if (!contactForm.checkValidity()) {
@@ -199,9 +199,35 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
       submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Sending Message...';
 
-      setTimeout(() => {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalBtnContent;
+      const userName = document.getElementById('userName')?.value.trim() || '';
+      const userEmail = document.getElementById('userEmail')?.value.trim() || '';
+      const projectTypeEl = document.getElementById('projectType');
+      const projectTypeText = projectTypeEl ? projectTypeEl.options[projectTypeEl.selectedIndex].text : '';
+      const rawMessage = document.getElementById('userMessage')?.value.trim() || '';
+
+      // Format message to also include the selected Inquiry/Project Type
+      const fullMessage = projectTypeText 
+        ? `[Inquiry Type: ${projectTypeText}]\n\n${rawMessage}` 
+        : rawMessage;
+
+      const formData = new URLSearchParams();
+      formData.append('entry.1949412058', userName);
+      formData.append('entry.192090792', userEmail);
+      formData.append('entry.681571278', fullMessage);
+
+      const GOOGLE_FORM_URL = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSeSTsDEeC16Fsyg54tANfFeP-leWGTV4anD3W8CF_0YMI-mcg/formResponse';
+
+      try {
+        await fetch(GOOGLE_FORM_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+          },
+          body: formData.toString()
+        });
+
+        // Reset form and validation state
         contactForm.reset();
         contactForm.classList.remove('was-validated');
 
@@ -210,7 +236,13 @@ document.addEventListener('DOMContentLoaded', () => {
           const toast = new bootstrap.Toast(contactToastEl, { delay: 5000 });
           toast.show();
         }
-      }, 1200);
+      } catch (err) {
+        console.error('Failed to submit form to Google Forms:', err);
+        alert('There was a problem submitting your message. Please try again or reach out directly.');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnContent;
+      }
     });
   }
 
